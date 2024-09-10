@@ -27,7 +27,6 @@ const Projects = () => (
           <p className="prose prose-sm prose-neutral dark:prose-invert">{project.summary}</p>
 
           <p className="text-xs leading-relaxed font-bold">{project.tags.map((tag) => `#${tag}`).join(" ")}</p>
-
           {project.link && (
             <div className="mt-1 flex gap-5">
               {project.link.web && (
@@ -37,20 +36,10 @@ const Projects = () => (
                   </a>
                 </Tippy>
               )}
-
-              {project.link.github && (
-                <Tippy content="Checkout Source Code" placement="bottom">
-                  <a href={project.link.github} target="_blank" rel="noreferrer">
-                    <FaGithub fontSize={18} />
-                  </a>
-                </Tippy>
-              )}
             </div>
           )}
         </div>
-      ))}
-    </div>
-
+      ))}    </div>
     <Button icon={FaGithub} className="mt-8" onClick={() => openURLInNewTab(links.github)}>
       Projects on GitHub
     </Button>

@@ -49,7 +49,7 @@ const Home: NextPage<Props> = ({ articles, dribbbleShots, instagramMedia }) => (
 
     <Skills />
     <Projects />
-    <Blog articles={articles} />
+    {/* <Blog articles={articles} /> */}
     <Languages />
 
     <div className="grid lg:grid-cols-3 gap-12">
@@ -58,12 +58,12 @@ const Home: NextPage<Props> = ({ articles, dribbbleShots, instagramMedia }) => (
       <Philantrophy />
     </div>
 
-    <Photography instagramMedia={instagramMedia} />
-    <Music />
-    <Designs dribbbleShots={dribbbleShots} />
-    <Resume />
+    {/* <Photography instagramMedia={instagramMedia} />
+    <Music /> */}
+    <Designs />
+    {/* <Resume />
     <Contact />
-    <AboutRotW />
+    <AboutRotW /> */}
     <Footer />
   </div>
 );

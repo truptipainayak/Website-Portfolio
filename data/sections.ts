@@ -25,10 +25,6 @@ const sectionsList: SectionMap = {
     icon: FaDev,
     title: "Projects",
   },
-  [Section.Blog]: {
-    icon: MdBook,
-    title: "Blog",
-  },
   [Section.Languages]: {
     icon: FaSignLanguage,
     title: "Languages",
@@ -45,6 +41,10 @@ const sectionsList: SectionMap = {
     icon: BiDonateHeart,
     title: "Philantrophy",
   },
+  [Section.Designs]: {
+    icon: FaPaintBrush,
+    title: "Designs",
+  },
   [Section.Photography]: {
     icon: MdCamera,
     title: "Photography",
@@ -53,10 +53,11 @@ const sectionsList: SectionMap = {
     icon: MdMusicNote,
     title: "Music",
   },
-  [Section.Designs]: {
-    icon: FaPaintBrush,
-    title: "Designs",
+  [Section.Blog]: {
+    icon: MdBook,
+    title: "Blog",
   },
+  
   [Section.Resume]: {
     icon: FaFilePdf,
     title: "Resume",

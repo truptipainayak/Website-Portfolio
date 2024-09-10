@@ -4,20 +4,17 @@ const philantrophyList: Philantrophy[] = [
   {
     id: 1,
     title: "Lead Organizer of a Blood Donation Drive",
-    description:
-      "Oversaw close to 1000+ students actively participating in the Donation Drive which was organized at Sagar Hospitals, Bengaluru.",
+    description: "Oversaw close to 1000+ students actively participating in the Donation Drive which was organized at JSS Institute of technical Education, Bengaluru.",
   },
   {
     id: 2,
-    title: "Development of Calamity Control",
-    description:
-      "A project created at the nick of time to crowd-source disaster information and get a more detailed area-by-area view on the safezones of a calamity struck area, compared to the disaster safety check by Facebook.",
+    title: "Volunteer at Yodha",
+    description: "Yodha is a social service club. We organized and conducted various social service events in Bangalore.",
   },
   {
     id: 3,
-    title: "Development of ChennaiRains.org",
-    description:
-      "A crowd-sourced repository of information created overnight that was used at a time of dire need by many people stranded in the floods of Chennai and surrounding areas.",
+    title: "Vounteer at Ramose Foundation",
+    description: "RA-MOSE foundation is an NGO focused on service activities in the field of education. I took part actively in donating books and study kits to needy students and empower them with knowledge.",
   },
 ];
 

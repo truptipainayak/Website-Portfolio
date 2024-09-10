@@ -25,7 +25,7 @@ const Navigation = () => {
             onClick={animateScroll.scrollToTop}
             className="p-1 flex cursor-pointer grayscale hover:grayscale-0 transition-[filter]"
           >
-            <Image src="/images/icon.png" alt="Amruth Pillai" width={32} height={32} />
+            <Image src="/images/icon.png" alt="A" width={32} height={32} />
           </div>
         </Tippy>
 
@@ -45,20 +45,20 @@ const Navigation = () => {
           onClick={animateScroll.scrollToTop}
           className="p-1 flex cursor-pointer grayscale hover:grayscale-0 transition-[filter]"
         >
-          <Image src="/images/icon.png" alt="Amruth Pillai" width={32} height={32} />
+          <Image src="/images/icon.png" alt="A" width={32} height={32} />
         </div>
       </Tippy>
 
       <div className="flex-1 w-7 overflow-hidden flex justify-start items-center group">
         <div className="flex w-full transition-[margin] ml-2 group-hover:-ml-7">
-          <FiMenu />
+          {/* <FiMenu /> */}
         </div>
 
         <div className="flex flex-col ml-2">
           {sectionsArray.map(({ id, icon: Icon, title }) => (
             <Tippy key={id} content={<small>{title}</small>} placement="right">
               <div className="cursor-pointer py-3" onClick={() => goToSection(id)}>
-                <Icon />
+                {/* <Icon /> */}
               </div>
             </Tippy>
           ))}

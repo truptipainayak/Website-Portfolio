@@ -13,7 +13,7 @@ const Languages: React.FC = () => {
       <div className="h-[180px] flex flex-col justify-center">
         <Typewriter
           options={{
-            delay: 40,
+            delay: 10,
             loop: true,
             cursor: "",
           }}
@@ -22,7 +22,7 @@ const Languages: React.FC = () => {
               typewriter
                 .typeString(`<div class="text-3xl font-bold">${language.text}</div>`)
                 .typeString(language.translation ? `<div class="mt-2 text-base">${language.translation}</div>` : "")
-                .pauseFor(3000)
+                .pauseFor(1000)
                 .deleteAll();
             }
             typewriter.start();

@@ -8,7 +8,7 @@ const Ingredients = () => (
         typewriter
           .pauseFor(2000)
           .typeString("<span class='text-blue-500'>const </span>")
-          .typeString("amruth: Array<")
+          .typeString("trupti: Array<")
           .typeString("<span class='text-green-500'>Ingredient</span>")
           .typeString("> ")
           .typeString("<span class='text-blue-500'>= </span>")
@@ -17,7 +17,7 @@ const Ingredients = () => (
           .typeString("<span class='text-red-500'>Designer</span>, ")
           .typeString("<span class='text-red-500'>Developer</span>, ")
           .typeString("<span class='text-red-500'>Photographer</span>, ")
-          .typeString("<span class='text-red-500'>Writer</span>,<br>")
+          .typeString("<span class='text-red-500'>Explorer</span>,<br>")
           .typeString("<span class='pl-5'></span>")
           .typeString("<span class='text-red-500'>Sugar</span>, ")
           .typeString("<span class='text-red-500'>Spice</span>, ")

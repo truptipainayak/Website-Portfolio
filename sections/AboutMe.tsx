@@ -1,55 +1,58 @@
 import Image from "next/image";
 import { Section } from "types/Sections";
-import { getSectionHeading } from "utils";
+import { getSectionHeading, openURLInNewTab } from "utils";
+import Button from "components/Button";
+import links from "data/links";
 
 const AboutMe = () => (
   <div id={Section.AboutMe}>
     {getSectionHeading(Section.AboutMe)}
-
     <div className="grid md:grid-cols-4 gap-12">
-      <div className="relative col-span-1 hidden md:block">
-        <Image
-          fill
-          alt="Selfie Boy"
-          src="/images/about-me/selfie-boy.svg"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </div>
+  <div className="relative col-span-1 md:hidden mb-6">
+    <div className="aspect-square relative">
+      <Image
+        alt="Selfie"
+        src="/images/about-me/selfie.png"
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+    </div>
+  </div>
 
+  <div className="relative col-span-1 hidden md:block">
+    <div className="aspect-square relative">
+      <Image
+        alt="Selfie"
+        src="/images/about-me/selfie.png"
+        fill
+        className="object-contain"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+    </div>
+  </div>
       <div className="col-span-3 max-w-full prose prose-sm md:prose-base prose-neutral dark:prose-invert">
         <p>Hey there!</p>
 
-        <p>
-          I&apos;m Amruth Pillai, and as you might have already read, I&apos;m a designer, developer, photographer and a
-          writer. This website was made to showcase all of what I can do and plan to do. Don&apos;t judge my writing
-          based on this section though, this is by far my shoddiest work yet.
+<p>
+I’m Trupti Nayak—a full-stack JavaScript developer, designer, and photographer. This website is a reflection of my journey, showcasing my diverse skills and passions.
+</p><p>
+I ventured into design driven by a keen eye for aesthetics. I’m a self-proclaimed perfectionist, always striving to ensure that everything I create not only functions well but also looks exceptional. My goal is to craft products that are as beautiful as they are functional.
+</p><p>
+
+My fascination with technology led me to development. The digital experiences we often take for granted—like seemed like magic to me, igniting my curiosity and fueling my quest to innovate.
+</p><p>
+This website is designed to give you a glimpse into my work and make it easy for us to connect. If my work resonates with you, I’d love to hear from you! Feel free to drop me an email at truptipai95@gmail.com.
+</p><p>
+For a more streamlined view of my information, you can download a PDF version of my portfolio here:
         </p>
 
-        <p>
-          I got into design because I consider myself a pseudo-perfectionist, if that&apos;s even a word? As in, I hate
-          to see things &apos;not look good&apos;. So I set out on a journey to make products that people use that
-          &apos;look great&apos;, and I&apos;m forever on that path.
-        </p>
-
-        <p>
-          I got into development because computers have always fascinated me.<code>int i = 10;</code> creates an integer
-          of value 10? LIKE, WOW! But seriously, just seeing code getting converted to things we use regularly, like
-          Facebook or Amazon, was no less than magic to me and that&apos;s where my quest to invent began.
-        </p>
-
-        <p>
-          I got into photography for a very philosophical reason and a very weird one at that. To me, photography is no
-          less than time-travel. When I look at a photo, I am instantly transported to that moment in time when I shot
-          it, that memory takes over. It&apos;s a beautiful art form to express creativity as well, and it&apos;s been a
-          passion of mine since my childhood.
-        </p>
-
-        <p>
-          I created this website so I could showcase all this and through this process, make it easier for you to
-          connect with me. If you like what you see, head over to the <a href="#contact">contact section</a> below and
-          send me a text. I would love to hear from you!
-        </p>
+        
+        <div>
+          <Button onClick={() => openURLInNewTab(links.resume)}>Download Resume</Button>
+        </div>
       </div>
+      
     </div>
   </div>
 );

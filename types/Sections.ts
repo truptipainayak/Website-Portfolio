@@ -57,6 +57,15 @@ export type Project = {
   };
 };
 
+export type Design = {
+  id: number;
+  image: string;
+  name: string;
+  link?: {
+    web?: string;
+  };
+};
+
 export type Achievement = {
   id: number;
   title: string;

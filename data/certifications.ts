@@ -3,29 +3,30 @@ import type { Certification } from "types/Sections";
 const certificationsList: Certification[] = [
   {
     id: 1,
-    title: "Applied CS with Android",
-    subtitle: "Google",
+    title: "Advanced Angular",
+    subtitle: "Plural Sight",
   },
   {
     id: 2,
-    title: "The Complete React Native and Redux Course",
+    title: "ES6, Modern React with Redux, MERN Stack Complete Guide",
     subtitle: "Udemy",
   },
   {
     id: 3,
-    title: "Data Science & Machine Learning using Python",
-    subtitle: "Udemy",
+    title: "Azure Fundamentals AZ-104",
+    subtitle: "Plural Sight",
   },
   {
     id: 4,
-    title: "Dynamic Skills Integrated Program",
-    subtitle: "DSI - Center for Innovation and Leadership",
+    title: "Docker and Kubernetes Complete Guide",
+    subtitle: "Udemy",
   },
   {
     id: 5,
-    title: "Java - Level 1 & 2",
-    subtitle: "Cambridge Certification Authority",
+    title: "C Programming",
+    subtitle: "NIIT",
   },
 ];
+
 
 export default certificationsList;

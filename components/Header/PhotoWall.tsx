@@ -3,10 +3,7 @@ import clsx from "clsx";
 import Image from "next/image";
 
 const photos: string[] = [
-  "/images/photo-wall/photo-3jn2.jpg",
-  "/images/photo-wall/photo-7sm2.jpg",
-  "/images/photo-wall/photo-9ns6.jpg",
-  "/images/photo-wall/photo-2js9.jpg",
+  "/images/circle.png",
 ];
 
 type Props = {
@@ -15,32 +12,32 @@ type Props = {
 
 const PhotoWall: React.FC<Props> = ({ size = 512 }) => {
   return (
-    <div className="flex gap-1" style={{ width: size, height: size }}>
+    <div className="grid md:grid-cols-2 gap-12" style={{ width: size, height: size }}>
       {photos.map((photo, index) => (
         <div
           key={photo}
-          style={{ animationDelay: `${index * 0.5 + 0.5}s` }}
+          style={{ animationDelay: `${index * 0.1 + 0.1}s` }}
           className={clsx(
-            "relative transition-[width]",
+            "relative col-span-1 transition-[width]",
             "animate__animated animate__fadeInDown",
             css`
-              width: ${size / 4}px;
+              width: ${size}px;
               height: ${size}px;
-
-              &:hover {
-                width: ${size / 2}px;
-              }
             `,
           )}
         >
+          <div className="relative col-span-1">
+          <div className="aspect-square relative">
           <Image
             fill
             priority
             src={photo}
-            alt="Amruth Pillai"
+            alt="Trupti Nayak"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className={clsx("object-cover", { "rounded-l": index === 0, "rounded-r": index === photos.length - 1 })}
           />
+        </div>
+        </div>
         </div>
       ))}
     </div>
