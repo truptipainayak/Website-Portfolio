@@ -44,7 +44,7 @@ const Profiles: React.FC = () => (
       <Tippy key={title} content={title} placement="bottom">
         <span
           className={clsx("p-1 text-sm text-white rounded-full", "animate__animated animate__fadeIn", className)}
-          style={{ animationDelay: `${index * 0.5 + 0.5}s` }}
+          style={{ animationDelay: `${index * 0.5 + 0}s` }}
         >
           <a href={link} target="_blank" rel="noreferrer">
             <Icon />

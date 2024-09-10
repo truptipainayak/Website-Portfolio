@@ -16,7 +16,7 @@ const PhotoWall: React.FC<Props> = ({ size = 512 }) => {
       {photos.map((photo, index) => (
         <div
           key={photo}
-          style={{ animationDelay: `${index * 0.1 + 0.1}s` }}
+          style={{ animationDelay: `${index * 0.1 + 0}s` }}
           className={clsx(
             "relative col-span-1 transition-[width]",
             "animate__animated animate__fadeInDown",

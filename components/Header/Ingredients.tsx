@@ -6,7 +6,7 @@ const Ingredients = () => (
       options={{ delay: 40 }}
       onInit={(typewriter) => {
         typewriter
-          .pauseFor(2000)
+          .pauseFor(1500)
           .typeString("<span class='text-blue-500'>const </span>")
           .typeString("trupti: Array<")
           .typeString("<span class='text-green-500'>Ingredient</span>")

@@ -6,7 +6,7 @@ const links = {
   dribbble: "https://xyz/dribbble",
   dev: "https://xyz/dev",
   facebook: "https://www.facebook.com/trupti.pai.3/",
-  resume: "https://drive.google.com/file/d/1sUk3eJK6xA_oEZ-MZY2Uf0Ecumpu_iyt/view",
+  resume: "https://drive.google.com/file/d/1rp4wIlsjuPXY6PVSLOOoy4B13qqeoJym/view",
   repository: "https://github.com/",
 };
 
